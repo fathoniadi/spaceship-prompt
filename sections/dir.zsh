@@ -41,7 +41,8 @@ spaceship_dir() {
     # `$git_root` has symlinks resolved, so we use `${PWD:A}` which resolves
     # symlinks in the working directory.
     # See "Parameter Expansion" under the Zsh manual.
-    dir="$trunc_prefix$git_root:t${${PWD:A}#$~~git_root}"
+    # dir="$trunc_prefix$git_root:t${${PWD:A}#$~~git_root}"
+    dir="$trunc_prefix%~"
   else
     if [[ SPACESHIP_DIR_TRUNC -gt 0 ]]; then
       # `%(N~|TRUE-TEXT|FALSE-TEXT)` replaces `TRUE-TEXT` if the current path,
@@ -51,7 +52,7 @@ spaceship_dir() {
       trunc_prefix="%($((SPACESHIP_DIR_TRUNC + 1))~|$SPACESHIP_DIR_TRUNC_PREFIX|)"
     fi
 
-    dir="$trunc_prefix%${SPACESHIP_DIR_TRUNC}~"
+    dir="$trunc_prefix%~"
   fi
 
   spaceship::section \

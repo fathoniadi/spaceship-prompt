@@ -212,3 +212,37 @@ prompt_spaceship_setup() {
 
 # Pass all arguments to the spaceship_setup function
 prompt_spaceship_setup "$@"
+
+
+# Custom GIT
+
+SPACESHIP_GIT_BRANCH_COLOR="blue"
+
+
+# Custom Folder
+SPACESHIP_DIR_COLOR="blue"
+
+
+# Custom Battery
+SPACESHIP_BATTERY_SHOW="true"
+
+
+SPACESHIP_ELIXIR_COLOR="blue"
+SPACESHIP_HG_BRANCH_COLOR="blue"
+SPACESHIP_GOLANG_COLOR="blue"
+SPACESHIP_DOCKER_COLOR="blue"
+SPACESHIP_KUBECONTEXT_COLOR="blue"
+
+
+SPACESHIP_HOST_SHOW="false"
+SPACESHIP_USER_SHOW="always"
+
+
+SPACESHIP_USER_COLOR="blue"
+SPACESHIP_DIR_PREFIX="@ "
+
+SPACESHIP_KUBECONTEXT_SHOW="false"
+
+SPACESHIP_PYENV_SHOW="true"
+
+SPACESHIP_DIR_TRUNC="0"
